@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_saleList_machine_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:ellipsize="end"
+            android:textColor="@color/heavy_grey"
+            android:text="1.test001" />
+
+        <TextView
+            android:id="@+id/tv_saleList_machine_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:ellipsize="end"
+            android:textColor="@color/heavy_grey"
+            android:text="·test001" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_salelist_order_adrress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="13.5dp"
+        android:textSize="14sp"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/heavy_grey"
+        android:text="科大家属楼大发发发大水发" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13.5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_salelist_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="12.5dp"
+            android:textSize="12sp"
+            android:textColor="@color/color_green"
+            android:text="销售量：1000杯" />
+
+        <TextView
+            android:id="@+id/tv_salelist_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:textColor="@color/color_green"
+            android:text="销售总额：1000元" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="17dp"
+        android:background="@color/line_color" />
+</LinearLayout>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="咖啡机品牌" />
+
+        <TextView
+            android:id="@+id/tv_machine_brand"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="极伽" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="型号" />
+
+        <TextView
+            android:id="@+id/tv_machine_type"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="极伽" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加盟商" />
+
+        <TextView
+            android:id="@+id/tv_alliance"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="锦业" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="粉料盒数量" />
+
+        <TextView
+            android:id="@+id/tv_box_number"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="6" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纸杯口径" />
+
+        <TextView
+            android:id="@+id/tv_cup_radius"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="60" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="磨豆" />
+
+        <TextView
+            android:id="@+id/tv_bean_count"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="8.5" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建时间" />
+
+        <TextView
+            android:id="@+id/tv_create_time"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="2017-08-15" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="经度" />
+
+        <TextView
+            android:id="@+id/tv_longtitude"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="120.348" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="纬度" />
+
+        <TextView
+            android:id="@+id/tv_latitude"
+            style="@style/right_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:text="30.565" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/standard_white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/tv_note_tag"
+                style="@style/left_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerVertical="false"
+                android:text="备注:" />
+
+            <TextView
+                android:id="@+id/tv_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_note_tag"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="将第三佛个加了就 " />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+</LinearLayout>

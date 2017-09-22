@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="50dp"
+    android:paddingLeft="12.5dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+
+    <TextView
+        android:id="@+id/tv_duty_name"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:textColor="@color/standard_grey"
+        android:text="李某某" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_little_grey">
+
+    <include layout="@layout/item_top_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="311dp"
+            android:layout_height="24dp"
+            android:layout_marginLeft="24.5dp"
+            android:layout_marginRight="52dp"
+            android:background="@drawable/rect_search">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12.5dp"
+                android:src="@drawable/icon_glass" />
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="28.5dp"
+                android:background="@null"
+                android:inputType="text"
+                android:singleLine="true"
+                android:layerType="software"
+                android:imeOptions="actionSearch"
+                android:textSize="12sp"
+                android:textColorHint="@color/text_hint_color"
+                android:textColor="@color/standard_black"
+                android:hint="我的" />
+
+            <ImageView
+                android:id="@+id/iv_search_clear"
+                android:visibility="invisible"
+                android:layout_width="13.5dp"
+                android:layout_height="13.5dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:padding="5dp"
+                android:background="@drawable/icon_grey_clear"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textSize="15sp"
+            android:textColor="@color/standard_grey"
+            android:text="取消" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+        android:paddingBottom="4dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/color_little_grey">
+
+        <TextView
+            android:id="@+id/tv_search_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12.5dp"
+            android:textSize="14sp"
+            android:textColor="@color/standard_grey"
+            android:text="我的搜索" />
+    </LinearLayout>
+
+    <com.chanven.lib.cptr.PtrClassicFrameLayout android:id="@+id/pcfl_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_little_grey"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        cube_ptr:ptr_duration_to_close="200"
+        cube_ptr:ptr_duration_to_close_header="700"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.8">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.chanven.lib.cptr.PtrClassicFrameLayout>
+
+</LinearLayout>

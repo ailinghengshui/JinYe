@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/color_little_grey"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/titlebar" />
+
+    <EditText
+        android:id="@+id/et_promotion_text"
+        android:textCursorDrawable="@drawable/color_cursor"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white"
+        android:gravity="top"
+        android:hint="输入促销信息"
+        android:lineSpacingMultiplier="1.3"
+        android:paddingLeft="12.5dp"
+        android:paddingRight="12.5dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/standard_black"
+        android:textSize="14sp" />
+</LinearLayout>

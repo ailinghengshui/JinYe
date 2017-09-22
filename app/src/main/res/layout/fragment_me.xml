@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_little_grey">
+
+    <include layout="@layout/titlebar" />
+
+    <include
+        android:id="@+id/ll_me_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <include
+        android:id="@+id/ll_me_role"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <include
+        android:id="@+id/ll_me_phone"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <include
+        android:id="@+id/ll_me_email"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <include
+        android:id="@+id/ll_me_password"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <include
+        android:id="@+id/ll_me_setting"
+        layout="@layout/item_me_tab_layout" />
+
+    <include layout="@layout/item_line" />
+
+    <Button
+        style="?android:attr/borderlessButtonStyle"
+        android:id="@+id/btnMeExit"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_circ_rec_red_cont"
+        android:textSize="17dp"
+        android:textColor="@color/white"
+        android:text="退出登录" />
+</LinearLayout>

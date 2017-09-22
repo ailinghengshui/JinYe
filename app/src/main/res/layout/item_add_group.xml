@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_more_item_group"
+    android:layout_height="wrap_content"
+    android:paddingLeft="12dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+    <View
+        android:id="@+id/view_group_top_grey"
+        android:background="@color/color_little_grey"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_add_group_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.5dp"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:text="1" />
+
+        <ImageView
+            android:id="@+id/iv_add_group"
+            android:layout_width="66dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/icon_group" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_add_group_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/heavy_grey"
+                android:text="tech111" />
+
+            <TextView
+                android:id="@+id/tv_add_group_note"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.5dp"
+                android:textSize="12sp"
+                android:textColor="@color/heavy_grey"
+                android:text="江干区孵化器2幢" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <CheckBox
+            style="@style/MyCheckBox"
+            android:id="@+id/checkbox_group_isChecked"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/color_line" />
+</LinearLayout>

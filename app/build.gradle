@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '25.0.0'
+
+    defaultConfig {
+        applicationId "com.hzjytech.operation"
+        minSdkVersion 19
+        targetSdkVersion 24
+        // Enabling multidex support.
+        multiDexEnabled true
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a',
+           'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                UMENG_CHANNEL_VALUE: "官方",
+                JPUSH_PKGNAME : "com.hzjytech.operation",
+                JPUSH_APPKEY : "d43a145f1b2f87eb375b39e2", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+        ]
+        resValue("string", "SHOWLOG", "true");
+        resValue("string", "isOnline", "jijia_online");
+        resValue("string","app_name","锦业运维")
+        resValue("string", "IP", "https://yunwei.hzjytech.com/CoffeeWebServer/api/v1/");
+
+    }
+    signingConfigs {
+        release {
+            storeFile file('operation.jks')
+            storePassword 'operation'
+            keyAlias 'operation'
+            keyPassword 'operation'
+            v2SigningEnabled false
+        }
+        debug{}
+
+    }
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+    //加速dex构建时间
+    dexOptions {
+        maxProcessCount 4 // this is the default value
+        javaMaxHeapSize "2g"
+    }
+    // 打包渠道List
+    productFlavors {
+        operationtest{
+            manifestPlaceholders = [
+                    UMENG_CHANNEL_VALUE: "operationtest",
+                    JPUSH_PKGNAME : "com.hzjytech.operationtest",
+                    JPUSH_APPKEY : "8ec28b408ed4c89091063e04", //JPush上注册的包名对应的appkey.
+                    JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
+            ]
+            applicationId "com.hzjytech.operationtest"
+            resValue("string", "SHOWLOG", "true");
+            resValue("string", "isOnline", "jijia_testline");
+            resValue("string","app_name","锦业运维测试")
+            resValue("string", "IP", "https://ywtest.hzjytech.com/CoffeeWebServer/api/v1/");
+        }
+        operation{
+            manifestPlaceholders = [ UMENG_CHANNEL_VALUE: "operation"]
+
+        }
+        tengxun {
+            manifestPlaceholders = [ UMENG_CHANNEL_VALUE: "tengxun"]
+        }
+
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            zipAlignEnabled true
+            // 资源压缩，移除无用的资源文件
+            shrinkResources true
+            // 签名信息配置（如果上面配置了defaultConfig则可以不用指定signingConfig）
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+        debug {
+            signingConfig  signingConfigs.debug
+        }
+    }
+    lintOptions {
+        disable 'MissingTranslation'
+        checkReleaseBuilds false
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.jakewharton:butterknife:8.0.1'
+    apt 'com.jakewharton:butterknife-compiler:8.0.1'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.1.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    // Retrofit的rx解析库
+    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.2'
+    //glide库
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    //图片选择框架
+    compile 'com.github.LuckSiege.PictureSelector:picture_library:v2.0.2'
+    //qiniu
+    compile 'com.qiniu:qiniu-android-sdk:7.1.2'
+    //luban压缩
+    compile 'top.zibin:Luban:1.1.1'
+    //xUtils
+    compile 'org.xutils:xutils:3.3.36'
+    //运行时权限
+    apt 'com.zhy:mpermission-compiler:1.0.0'
+    compile 'com.zhy:mpermission-api:1.0.0'
+    //友盟统计
+    compile 'com.umeng.analytics:analytics:latest.integration'
+    //极光推送
+    compile 'cn.jiguang.sdk:jpush:3.0.3'
+    // 此处以JPush 3.0.3 版本为例。
+    compile 'cn.jiguang.sdk:jcore:1.1.1'
+    // 此处以JCore 1.1.1 版本为例。
+    //添加multidex 解决超过64k问题
+    compile 'com.android.support:multidex:1.0.1'
+    //jodate
+    compile 'joda-time:joda-time:2.9.9'
+    compile project(':scan')
+    compile project(':pickerview')
+    compile project(':cptr')
+    compile project(':swipemenulib')
+    compile project(':qiniutoken')
+    compile project(':MPChartLib')
+    compile project(':fitnlib')
+}

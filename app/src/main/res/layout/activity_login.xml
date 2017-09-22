@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/color_little_grey">
+
+        <ImageView
+            android:id="@+id/icon_avator"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:src="@mipmap/logo" />
+
+        <LinearLayout
+            android:id="@+id/ll_login_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/icon_avator"
+            android:layout_marginTop="15.5dp"
+            android:orientation="vertical"
+            android:background="@color/standard_white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="53dp"
+                    android:paddingRight="53dp">
+
+                    <EditText
+                        android:id="@+id/metLoginTel"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:inputType="text"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:singleLine="true"
+                        android:layerType="software"
+                        android:textSize="17sp"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/standard_black"
+                        android:hint="@string/str_hint_phone" />
+
+                    <ImageView
+                        android:id="@+id/ivOldpsdfrgClear1"
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_grey_clear" />
+                </FrameLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/line_color" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingLeft="53dp"
+                android:paddingRight="53dp"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/metLoginPsd"
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:inputType="textPassword"
+                        android:textCursorDrawable="@drawable/color_cursor"
+                        android:singleLine="true"
+                        android:textSize="17sp"
+                        android:textColorHint="@color/text_hint_color"
+                        android:textColor="@color/standard_black"
+                        android:hint="@string/str_hint_password" />
+
+                    <ImageView
+                        android:id="@+id/ivOldpsdfrgClear2"
+                        android:visibility="gone"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="15dp"
+                        android:padding="5dp"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/icon_grey_clear" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@id/ll_login_edit"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="25dp"
+            android:background="@drawable/selector_login_button"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:text="登录" />
+
+        <TextView
+            android:id="@+id/btnLoginFgpsd"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:gravity="right"
+            android:clickable="true"
+            android:textSize="15sp"
+            android:textColor="@color/colorPrimary"
+            android:text="忘记密码?" />
+
+
+    </RelativeLayout>
+</LinearLayout>

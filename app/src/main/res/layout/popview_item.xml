@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_pop_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    android:fitsSystemWindows="false">
+
+    <ImageView
+        android:layout_width="140dp"
+        android:layout_height="110.5dp"
+        android:background="@drawable/bg_scan"
+        android:clickable="true" />
+
+    <LinearLayout
+        android:layout_width="140dp"
+        android:layout_height="101dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rect_pop_scan_">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/icon_scan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.5dp"
+                android:textSize="14sp"
+                android:text="扫一扫" />
+        </LinearLayout>
+
+        <include layout="@layout/item_line" />
+
+        <LinearLayout
+            android:id="@+id/ll_new_task"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/rect_pop_newtask">
+
+            <ImageView
+                android:layout_width="17dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/icon_new_task" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16.5dp"
+                android:textSize="14sp"
+                android:text="新建任务" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

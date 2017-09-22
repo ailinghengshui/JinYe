@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_menu_pack_container"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:paddingTop="10dp"
+        android:textSize="17sp"
+        android:textColor="@color/heavy_black"
+        android:text="套餐属性" />
+</LinearLayout>

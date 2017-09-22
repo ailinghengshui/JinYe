@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference"/>
+        <attr name="kswThumbColor" format="color|reference"/>
+        <attr name="kswThumbMargin" format="dimension|reference"/>
+        <attr name="kswThumbMarginTop" format="dimension|reference"/>
+        <attr name="kswThumbMarginBottom" format="dimension|reference"/>
+        <attr name="kswThumbMarginLeft" format="dimension|reference"/>
+        <attr name="kswThumbMarginRight" format="dimension|reference"/>
+        <attr name="kswThumbWidth" format="dimension|reference"/>
+        <attr name="kswThumbHeight" format="dimension|reference"/>
+        <attr name="kswThumbRadius" format="dimension|reference"/>
+        <attr name="kswBackRadius" format="dimension|reference"/>
+        <attr name="kswBackDrawable" format="reference"/>
+        <attr name="kswBackColor" format="color|reference"/>
+        <attr name="kswFadeBack" format="boolean"/>
+        <attr name="kswBackMeasureRatio" format="float"/>
+        <attr name="kswAnimationDuration" format="integer"/>
+        <attr name="kswTintColor" format="color|reference"/>
+        <attr name="kswTextOn" format="string"/>
+        <attr name="kswTextOff" format="string"/>
+        <attr name="kswTextMarginH" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="searchedit">
+        <attr name="imagewidth" format="dimension|reference"/>
+        <attr name="textColor" format="color|reference"/>
+        <attr name="textSize" format="dimension|reference"/>
+    </declare-styleable>
+    <declare-styleable name="LinearListView">
+        <attr name="android:entries"/>
+        <attr name="dividerThickness" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="FlikerProgressBar">
+        <attr name="filkertextSize" format="dimension"/>
+
+        <attr name="loadingColor" format="color"/>
+
+        <attr name="stopColor" format="color"/>
+
+        <attr name="progressRadius" format="dimension"/>
+
+        <attr name="progressBorderWidth" format="dimension"/>
+
+    </declare-styleable>
+    <declare-styleable name="CellLinearLayout">
+        <attr name="leftText" format="string"/>
+
+        <attr name="rightHintText" format="string"/>
+
+        <attr name="hasDivider" format="boolean"/>
+
+    </declare-styleable>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_polling_container"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+
+    <View
+        android:id="@+id/polling_top_head"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_little_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_polling_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            android:text="1、显示屏" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/ll_check"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <CheckBox
+                style="@style/MyCheckBox"
+                android:id="@+id/checkbox_polling_isChecked"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="7dp"
+                android:clickable="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:textSize="15sp"
+                android:textColor="@color/tip_grey"
+                android:text="@string/done" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_polling_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="18dp"
+        android:textSize="12sp"
+        android:textColor="@color/standard_grey"
+        android:text="屏幕故障" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_photos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginRight="12.5dp"
+        android:layout_marginTop="18dp"
+        android:isScrollContainer="false"
+        android:overScrollMode="never"
+        android:scrollbars="none" />
+
+    <View
+        android:id="@+id/tv_polling_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginTop="21.5dp"
+        android:background="@color/line_color" />
+
+</LinearLayout>

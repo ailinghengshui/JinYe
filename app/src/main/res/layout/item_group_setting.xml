@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/color_little_grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_setting_promotion_info"
+        android:background="@color/standard_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="促销信息"
+            android:textColor="@color/heavy_grey"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:src="@drawable/icon_right" />
+
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <TextView
+        android:id="@+id/tv_settting_promotion_info"
+        android:background="@color/standard_white"
+        android:textColor="@color/standard_grey"
+        android:text="无"
+        android:textSize="14sp"
+        android:gravity="center_vertical"
+        android:paddingRight="12dp"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <LinearLayout
+        android:id="@+id/ll_setting_money_off"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="满减设置"
+            android:textColor="@color/heavy_grey"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:src="@drawable/icon_right" />
+
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/standard_white"
+        android:layout_width="match_parent"
+        android:paddingLeft="12dp"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tv_money_off"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全场满15减10"
+            android:textColor="@color/standard_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="7.5dp"
+            android:id="@+id/tv_off_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-08-12 08:00/2017-09-14 08:00"
+            android:textColor="@color/standard_grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:background="@color/line_color" />
+    <LinearLayout
+        android:id="@+id/ll_setting_money_discount"
+        android:layout_marginTop="10dp"
+        android:background="@color/standard_white"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="折扣设置"
+            android:textColor="@color/heavy_grey"
+            android:textSize="17sp" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="编辑"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.5dp"
+            android:src="@drawable/icon_right" />
+
+    </LinearLayout>
+    <include layout="@layout/line"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:background="@color/standard_white"
+        android:layout_width="match_parent"
+        android:paddingLeft="12dp"
+        android:layout_height="70dp">
+        <TextView
+            android:id="@+id/tv_discount"
+            android:text="全场0折"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/standard_grey"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_marginTop="7.5dp"
+             android:id="@+id/tv_discount_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-08-12 08:00/2017-09-14 08:00"
+            android:textColor="@color/standard_grey"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

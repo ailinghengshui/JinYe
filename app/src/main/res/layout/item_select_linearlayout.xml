@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_check_moreTime"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/standard_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            android:text="选择时间" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/tv_more_choose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/standard_grey"
+            android:text="更多选项" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/icon_right" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line_color" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/standard_white">
+
+        <TextView
+            android:id="@+id/tv_select_startTime"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="37.5dp"
+            android:layout_marginRight="37.5dp"
+            android:gravity="center"
+            android:background="@drawable/selector_select_time"
+            android:textSize="14sp"
+            android:textColor="@drawable/selector_select_time_text"
+            android:text="开始时间" />
+
+        <TextView
+            android:id="@+id/tv_select_endTime"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="37.5dp"
+            android:layout_marginRight="37.5dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:background="@drawable/selector_select_time"
+            android:textSize="14sp"
+            android:textColor="@drawable/selector_select_time_text"
+            android:text="结束时间" />
+    </LinearLayout>
+</LinearLayout>

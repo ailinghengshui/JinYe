@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MPChartLib/MPChartLib.iml" filepath="$PROJECT_DIR$/MPChartLib/MPChartLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cptr/cptr.iml" filepath="$PROJECT_DIR$/cptr/cptr.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fitnlib/fitnlib.iml" filepath="$PROJECT_DIR$/fitnlib/fitnlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pickerview/pickerview.iml" filepath="$PROJECT_DIR$/pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qiniutoken/qiniutoken.iml" filepath="$PROJECT_DIR$/qiniutoken/qiniutoken.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scan/scan.iml" filepath="$PROJECT_DIR$/scan/scan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/swipemenulib/swipemenulib.iml" filepath="$PROJECT_DIR$/swipemenulib/swipemenulib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/yw-Android.iml" filepath="$PROJECT_DIR$/yw-Android.iml" />
+    </modules>
+  </component>
+</project>

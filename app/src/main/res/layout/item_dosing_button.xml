@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="120dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/bt_add_materail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="27.5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_yellow_confirm"
+            android:textSize="17sp"
+            android:textColor="@color/standard_white"
+            android:text="@string/add_materail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="0dp"
+        android:layout_height="123dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/bt_calibration_materail"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="27.5dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/rect_purple_confirm"
+            android:textSize="17sp"
+            android:textColor="@color/standard_white"
+            android:text="@string/calibration_materail" />
+    </LinearLayout>
+</LinearLayout>

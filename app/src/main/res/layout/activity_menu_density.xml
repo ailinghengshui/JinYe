@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_little_grey">
+
+        <LinearLayout
+            android:id="@+id/ll_dentity_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12.5dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@color/standard_grey"
+                android:text="第一杯意式浓缩" />
+
+            <include
+                layout="@layout/item_cup_espresso"
+                android:id="@+id/cell_first" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12.5dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@color/standard_grey"
+                android:text="第二杯意式浓缩" />
+
+            <include
+                layout="@layout/item_cup_espresso"
+                android:id="@+id/cell_second" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="12.5dp"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@color/standard_grey"
+                android:text="第三杯意式浓缩" />
+
+            <include
+                layout="@layout/item_cup_espresso"
+                android:id="@+id/cell_third" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="123dp"
+                android:orientation="vertical">
+
+                <Button
+                    style="?android:attr/borderlessButtonStyle"
+                    android:id="@+id/bt_density_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="67.5dp"
+                    android:layout_marginRight="67.5dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/rect_blue_confirm"
+                    android:textSize="17sp"
+                    android:textColor="@color/standard_white"
+                    android:text="@string/confirm" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

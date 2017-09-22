@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:paddingLeft="8dp"
+    android:paddingRight="5dp"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:background="@color/standard_white">
+
+    <LinearLayout
+        android:id="@+id/item_machines_error"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="8dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_machines_error" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/heavy_grey"
+            android:text="咖啡机错误" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_machines_shortage"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_shortage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_machines_shortage" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/heavy_grey"
+            android:text="余料不足" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_machines_offline"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_offline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_machines_offline" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/heavy_grey"
+            android:text="离线状态" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_machines_lock"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_lock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="0dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_machines_lock" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/heavy_grey"
+            android:text="已锁定" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_machines_unoperation"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <ImageView
+            android:id="@+id/iv_unoperation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_machines_unoperation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:textSize="12sp"
+            android:textColor="@color/heavy_grey"
+            android:text="未运营" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

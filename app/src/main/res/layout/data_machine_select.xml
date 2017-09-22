@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:background="@color/color_little_grey">
+
+        <include layout="@layout/titlebar" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_edit"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rect_search">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.5dp"
+                    android:src="@drawable/icon_glass" />
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="28.5dp"
+                    android:background="@null"
+                    android:inputType="text"
+                    android:singleLine="true"
+                    android:layerType="software"
+                    android:imeOptions="actionSearch"
+                    android:textSize="12sp"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textColor="@color/standard_black"
+                    android:hint="查找咖啡机" />
+
+                <ImageView
+                    android:id="@+id/iv_search_clear"
+                    android:visibility="invisible"
+                    android:layout_width="13.5dp"
+                    android:layout_height="13.5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:padding="5dp"
+                    android:background="@drawable/icon_grey_clear"
+                    android:scaleType="centerInside" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_text"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical"
+                android:background="@drawable/rect_search"
+                android:clickable="true">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/icon_glass" />
+
+                    <TextView
+                        android:id="@+id/tv_home_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/hint_color"
+                        android:text="查找咖啡机" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_select_machine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="48dp"></android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/selector_login_button"
+        android:enabled="false"
+        android:textSize="17sp"
+        android:textColor="@color/white"
+        android:text="确定" />
+</RelativeLayout>

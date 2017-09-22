@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/color_little_grey">
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_more_task_type"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="@string/task_type" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_task_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/standard_grey"
+                    android:text="@string/fix_task" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_select_machines"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="选择一台咖啡机" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_add_machine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/standard_grey"
+                    android:text="选择咖啡机" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_machine_info"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/standard_white">
+
+                    <TextView
+                        style="@style/detail_message_left_textView"
+                        android:id="@+id/tv_task_code"
+                        android:text="咖啡机编号：test0001" />
+
+                    <TextView
+                        style="@style/detail_message_right_textView"
+                        android:id="@+id/tv_task_group"
+                        android:text="促销分组： 3.16" />
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/item_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="11.5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:background="@color/standard_white">
+
+                    <TextView
+                        style="@style/detail_message_left_textView"
+                        android:id="@+id/tv_task_menu"
+                        android:text="菜单：锦业" />
+
+                    <TextView
+                        style="@style/detail_message_right_textView"
+                        android:id="@+id/tv_task_version"
+                        android:text="当前版本：4.2.2" />
+                </RelativeLayout>
+
+                <include
+                    layout="@layout/item_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="11.5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64.5dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/standard_white">
+
+                    <TextView
+                        style="@style/detail_message_left_textView"
+                        android:text="地址:" />
+
+                    <TextView
+                        style="@style/detail_message_left_textView"
+                        android:id="@+id/tv_task_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:singleLine="false"
+                        android:textColor="@color/standard_grey"
+                        android:text="浙江省杭州市加快了电视剧发了就安静地方了看见俺放假阿道夫阿凡达" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more_person"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="@string/principal" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/standard_grey"
+                    android:text="去添加" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <com.hzjytech.operation.widgets.LinearLayout.LinearListView
+                android:id="@+id/ll_person_container"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/standard_white" />
+
+            <LinearLayout
+                android:id="@+id/ll_cut_down_time"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@color/standard_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="15sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="截止日期" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_cut_down_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/standard_grey"
+                    android:text="" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/icon_right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_click_add_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:minHeight="200dp"
+                android:background="@color/standard_white"
+                android:clickable="true">
+
+                <TextView
+                    android:id="@+id/tv_click_add_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="12dp"
+                    android:paddingTop="18dp"
+                    android:textSize="14sp"
+                    android:textColor="@color/standard_black"
+                    android:hint="@string/click_add_comment" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_new_comment_pic"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

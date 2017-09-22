@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@color/standard_white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_more_info"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/left_text"
+            android:text="基础信息"
+            android:textColor="@color/heavy_black"
+            android:textSize="17sp" />
+
+        <TextView
+            style="@style/right_text"
+            android:text="更多信息"
+            android:textColor="@color/heavy_grey"
+            android:textSize="12sp" />
+
+        <ImageView
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/left_text"
+            android:text="当前版本" />
+
+        <TextView
+            android:id="@+id/version"
+            style="@style/right_text"
+            android:text="4.4.2" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_machine_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:layout_centerVertical="true"
+            android:text="促销分组" />
+
+        <TextView
+            android:id="@+id/tv_machine_group"
+            style="@style/right_text"
+            android:layout_centerVertical="true"
+            android:text="4.4.2" />
+
+        <ImageView
+            android:id="@+id/iv_machine_group"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_machine_menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="菜单" />
+
+        <TextView
+            android:id="@+id/tv_machine_menu"
+            style="@style/right_text"
+            android:text="4.4.2" />
+
+        <ImageView
+            android:id="@+id/iv_machine_menu"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="运营状态" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_status"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+        <TextView
+            android:id="@+id/tv_status"
+            android:text="是"
+            style="@style/right_text"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_time_set"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="运营时间段设置" />
+
+        <TextView
+            android:id="@+id/tv_operation_time"
+            style="@style/right_text"
+            android:text="全天候" />
+
+        <ImageView
+            android:id="@+id/iv_operation_time"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="锁定状态" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_lock"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+        <TextView
+            android:id="@+id/tv_lock"
+            android:text="是"
+            style="@style/right_text"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="封闭状态" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_close"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+        <TextView
+            android:id="@+id/tv_close"
+            android:text="是"
+            style="@style/right_text"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_drink_type"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="默认饮品" />
+
+        <TextView
+            android:id="@+id/tv_default_drink"
+            style="@style/right_text"
+            android:text="冷饮" />
+
+        <ImageView
+            android:id="@+id/iv_default_drink"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            style="@style/left_text"
+            android:text="是否支持Coffee Me取货" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/sb_coffeeme"
+            style="@style/switch_button"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+        <TextView
+            android:id="@+id/tv_coffeeme"
+            android:text="是"
+            style="@style/right_text"
+            />
+    </RelativeLayout>
+
+    <include layout="@layout/line" />
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_alignParentTop="true"
+                android:id="@+id/tv_location_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.5dp"
+                android:text="地址:"
+                android:textColor="@color/heavy_grey"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_machine_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="14.5dp"
+                android:layout_toRightOf="@id/tv_location_tag"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="也许我会忘记我的心，但是我不会忘记你是一个怎么样的人曾经让我如何流连忘返"
+                android:textColor="@color/heavy_grey"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="14.5dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="14.5dp"
+            android:background="@color/line_color" />
+
+        <ImageView
+            android:id="@+id/iv_machine_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            android:src="@drawable/icon_arrow" />
+
+    </LinearLayout>
+
+    <include layout="@layout/line" />
+   <View
+       android:background="@color/color_little_grey"
+       android:layout_width="match_parent"
+       android:layout_height="10dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_add_role"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/left_text"
+            android:text="人员配置"
+            android:textColor="@color/heavy_black"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tv_add_role"
+            style="@style/right_text"
+            android:text="添加职位"
+            android:textColor="@color/heavy_grey"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/iv_add_role"
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+</LinearLayout>

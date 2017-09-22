@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_width="match_parent">
+
+    <com.hzjytech.operation.widgets.CellLinearLayout
+        android:id="@+id/cell_et_tare_deduction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="去皮重量(g)"
+        app:hasDivider="true"
+        app:rightHintText="请输入去皮重量" />
+
+    <com.hzjytech.operation.widgets.CellLinearLayout
+        android:id="@+id/cell_et_tea_shape"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="冲泡时间(s)"
+        app:hasDivider="true"
+        app:rightHintText="请输入冲泡时间" />
+
+    <com.hzjytech.operation.widgets.CellLinearLayout
+        android:id="@+id/cell_et_density"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="浓度(%)"
+        app:hasDivider="true"
+        app:rightHintText="请输入浓度" />
+
+    <com.hzjytech.operation.widgets.CellLinearLayout
+        android:id="@+id/cell_et_grinding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="研磨度"
+        app:hasDivider="true"
+        app:rightHintText="请输入研磨度" />
+
+    <com.hzjytech.operation.widgets.CellLinearLayout
+        android:id="@+id/cell_et_powder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftText="粉重(g)"
+        app:hasDivider="true"
+        app:rightHintText="请输入粉重" />
+
+</LinearLayout>

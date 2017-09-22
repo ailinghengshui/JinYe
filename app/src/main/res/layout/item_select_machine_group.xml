@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/item_select_machine_blank"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/color_little_grey" />
+
+    <LinearLayout
+        android:id="@+id/ll_menu_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/standard_white">
+
+        <LinearLayout
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:gravity="center_vertical"
+            android:background="@color/standard_white">
+
+            <LinearLayout
+                android:id="@+id/ll_check"
+                android:layout_width="42dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    style="@style/MyCheckBox"
+                    android:id="@+id/iv_select_machine_isChecked"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:clickable="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/iv_select_machine_icon"
+                android:layout_width="66dp"
+                android:layout_height="58dp"
+                android:gravity="center"
+                android:background="@drawable/icon_group"
+                android:textSize="24sp"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_select_machine_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="test001" />
+
+                <TextView
+                    android:id="@+id/tv_select_machine_des"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11.5dp"
+                    android:lines="1"
+                    android:ellipsize="end"
+                    android:textSize="12sp"
+                    android:textColor="@color/heavy_grey"
+                    android:text="fdajflkjflkadsjfl" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/iv_select_machine_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/icon_arrow_down" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/item_select_machine_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="12dp"
+            android:background="@color/line_color" />
+    </LinearLayout>
+</LinearLayout>

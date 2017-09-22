@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Scan</string>
+    <string name="scan">将取景框对准二维码，即可自动扫描</string>
+</resources>

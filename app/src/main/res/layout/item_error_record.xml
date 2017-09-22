@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginTop="10dp"
+    android:background="@color/standard_white"
+    android:layout_marginBottom="20dp"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_add_role"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/left_text"
+            android:text="历史错误记录"
+            android:textColor="@color/heavy_black"
+            android:textSize="17sp" />
+
+        <ImageView
+            style="@style/right_image"
+            android:src="@drawable/icon_right" />
+    </RelativeLayout>
+</LinearLayout>

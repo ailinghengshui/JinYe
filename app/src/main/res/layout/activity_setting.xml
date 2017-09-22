@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_little_grey">
+
+    <include layout="@layout/titlebar" />
+
+    <include
+        android:id="@+id/tl_receive_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        layout="@layout/item_me_tab_layout" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="10sp"
+        android:textColor="@color/standard_grey"
+        android:text="@string/setting_notify" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/standard_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            android:text="振动" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/switchButton_vibrate"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+    </LinearLayout>
+
+    <include layout="@layout/item_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/standard_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textSize="15sp"
+            android:textColor="@color/heavy_grey"
+            android:text="声音" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <com.hzjytech.operation.widgets.switchbutton.SwitchButton
+            android:id="@+id/switchButton_sound"
+            android:layout_width="48dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="22dp"
+            app:kswAnimationDuration="300"
+            app:kswBackDrawable="@drawable/ios_back_drawable"
+            app:kswBackMeasureRatio="1.4"
+            app:kswThumbDrawable="@drawable/thumb_switch_button" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:gravity="center_vertical"
+        android:textSize="10sp"
+        android:textColor="@color/standard_grey"
+        android:text="@string/notify_method" />
+
+    <include
+        android:id="@+id/tl_clear"
+        layout="@layout/item_me_tab_layout" />
+
+    <include
+        android:id="@+id/tl_about"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        layout="@layout/item_me_tab_layout" />
+</LinearLayout>

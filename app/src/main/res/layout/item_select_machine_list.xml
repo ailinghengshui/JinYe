@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="10dp"
+    android:paddingBottom="1dp"
+    android:clickable="true"
+    app:ios="false"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/standard_white">
+
+        <TextView
+            android:id="@+id/tv_select_id"
+            android:layout_width="66dp"
+            android:layout_height="58dp"
+            android:layout_marginLeft="12dp"
+            android:gravity="center"
+            android:background="@drawable/shape_home_rect"
+            android:textSize="24sp"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_select_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textColor="@color/heavy_grey"
+                android:text="test001" />
+
+            <TextView
+                android:id="@+id/tv_select_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11.5dp"
+                android:lines="1"
+                android:ellipsize="end"
+                android:textSize="12sp"
+                android:textColor="@color/heavy_grey"
+                android:text="fdajflkjflkadsjfl" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/color_red"
+        android:textColor="@android:color/white"
+        android:text="删除" />
+
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>
